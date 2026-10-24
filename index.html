@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Découvrez les spécialités de Saveurs d'Or et commandez vos plats préférés.">
+
+    <title>Saveurs d'Or | Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- En-tête -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#accueil" class="logo">
+                Saveurs <span>d'Or</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#menu">Notre menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#menu" class="btn btn-small">
+                        Commander
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Section principale -->
+        <section class="hero" id="accueil">
+            <div class="hero-content container">
+
+                <p class="hero-label">
+                    BIENVENUE CHEZ SAVEURS D'OR
+                </p>
+
+                <h1>
+                    Le plaisir de bien manger,
+                    <span>à chaque bouchée.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Découvrez une cuisine savoureuse,
+                    préparée avec passion et des ingrédients
+                    soigneusement sélectionnés.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn">
+                        Découvrir le menu
+                    </a>
+
+                    <a href="#apropos" class="btn btn-outline">
+                        Notre histoire
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Présentation -->
+        <section class="about section" id="apropos">
+            <div class="container about-content">
+
+                <div class="about-image">
+                    <img
+                        src="restaurant.jpg"
+                        alt="Ambiance chaleureuse du restaurant"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="about-text">
+                    <p class="section-label">QUI SOMMES-NOUS ?</p>
+
+                    <h2>La passion du goût et du partage</h2>
+
+                    <p>
+                        Chez Saveurs d'Or, chaque plat raconte
+                        une histoire. Nous mettons notre savoir-faire
+                        au service de votre plaisir.
+                    </p>
+
+                    <p>
+                        Que ce soit pour un déjeuner entre amis,
+                        un dîner en famille ou une pause gourmande,
+                        nous vous accueillons dans une ambiance conviviale.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Venez nous découvrir →
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Menu des plats -->
+        <section class="menu section" id="menu">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">NOS SPÉCIALITÉS</p>
+                    <h2>Un menu qui donne envie</h2>
+                    <p>
+                        Découvrez quelques-uns de nos plats préférés.
+                    </p>
+                </div>
+
+                <div class="menu-grid">
+
+                    <article class="food-card">
+                        <img
+                            src="plat-1.jpg"
+                            alt="Plat de poulet accompagné de riz"
+                            loading="lazy"
+                        >
+
+                        <div class="food-info">
+                            <h3>Poulet braisé</h3>
+                            <p>
+                                Poulet savoureux accompagné
+                                de sa garniture.
+                            </p>
+
+                            <div class="food-bottom">
+                                <span class="price">3 500 FCFA</span>
+
+                                <a
+                                    href="#contact"
+                                    class="order-link"
+                                    data-order="Poulet braisé"
+                                >
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img
+                            src="plat-2.jpg"
+                            alt="Assiette de riz et de viande"
+                            loading="lazy"
+                        >
+
+                        <div class="food-info">
+                            <h3>Riz spécial</h3>
+                            <p>
+                                Un délicieux riz accompagné
+                                de viande et de légumes.
+                            </p>
+
+                            <div class="food-bottom">
+                                <span class="price">2 500 FCFA</span>
+
+                                <a
+                                    href="#contact"
+                                    class="order-link"
+                                    data-order="Riz spécial"
+                                >
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img
+                            src="plat-3.jpg"
+                            alt="Assiette de poisson grillé"
+                            loading="lazy"
+                        >
+
+                        <div class="food-info">
+                            <h3>Poisson grillé</h3>
+                            <p>
+                                Poisson grillé et accompagnement
+                                au choix.
+                            </p>
+
+                            <div class="food-bottom">
+                                <span class="price">4 000 FCFA</span>
+
+                                <a
+                                    href="#contact"
+                                    class="order-link"
+                                    data-order="Poisson grillé"
+                                >
+                                    Commander
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+         <!-- Invitation à commander  -->
+        <section class="order-banner">
+            <div class="container">
+                <h2>Une petite faim ?</h2>
+
+                <p>
+                    Choisissez votre plat préféré et contactez-nous
+                    directement sur WhatsApp.
+                </p>
+
+                <a href="#contact" class="btn btn-light">
+                    Passer une commande
+                </a>
+            </div>
+        </section>
+
+         <!-- Contact -->
+        <section class="contact section" id="contact">
+            <div class="container contact-content">
+
+                <div class="contact-text">
+                    <p class="section-label">RENDEZ-NOUS VISITE</p>
+                    <h2>Nous sommes à votre écoute</h2>
+
+                    <p>
+                        Une question, une réservation ou une commande ?
+                        Contactez notre équipe.
+                    </p>
+                </div>
+
+                <div class="contact-details">
+                    <p>
+                        <strong>Adresse :</strong>
+                        Cotonou, Bénin
+                    </p>
+
+                    <p>
+                        <strong>Téléphone :</strong>
+                        +229 01 00 00 00 00
+                    </p>
+
+                    <p>
+                        <strong>Horaires :</strong>
+                        Tous les jours, de 10 h à 22 h
+                    </p>
+
+                    <a
+                        href="#"
+                        class="btn whatsapp-btn"
+                        id="whatsapp-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Commander sur WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+     <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <a href="#accueil" class="logo footer-logo">
+                Saveurs <span>d'Or</span>
+            </a>
+
+            <p>
+                © <span id="current-year"></span>
+                Saveurs d'Or. Tous droits réservés.
+            </p>
+
+            <a href="#accueil" class="back-to-top">
+                Retour en haut ↑
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
